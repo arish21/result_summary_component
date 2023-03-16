@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    /* Primary */
+    --Light_red: hsl(0, 100%, 98%);
+    --Orangey_yellow: hsl(39, 100%, 96%);
+    --Green_teal: hsl(166, 100%, 96%);
+    --Cobalt_blue: hsl(234, 85%, 96%);
+
+    /* Gradients */
+    --Light_slate_blue_background: hsl(252, 100%, 67%);
+    --Light_royal_blue_background: hsl(241, 81%, 54%);
+
+    --Violet_blue_circle: hsla(256, 72%, 46%, 1);
+    --Persian_bluecircle: hsl(241, 72%, 46%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 740px;
+    height: 515px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 30px 30px 60px 0px hsla(224, 30%, 27%, 0.363);   
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.section01 {
+    width: 370px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--Light_lavender);
+    border-radius: 30px;
+    background-image: linear-gradient(var(--Light_slate_blue_background), var(--Light_royal_blue_background), var(--Light_royal_blue_background));
+}
+
+.section01>h2 {
+    color: white;
+}
+
+.section01>p {
+    font-size: 15px;
+    padding: 40px;
+}
+.section01 > h3{
+    font-size: 1.3rem;
+    margin-bottom: -20px;
+}
+
+.res76 {
+    background-color: var(--White);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--Violet_blue_circle), var(--Persian_bluecircle), var(--Light_royal_blue_background));
+}
+
+.res76>h2 {
+    font-size: 4rem;
+    color: var(--White);
+}
+
+.res76>p {
+    opacity: 50%;
+}
+
+.content-res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-res>p {
+    text-align: center;
+    margin: 20px 55px;
+    font-size: 1.1rem;
+}
+
+.content-res > h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.section02 {
+    width: 370px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section02 > h3{
+    width: 80%;
+    font-size: 1.3rem;
+}
+.content {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 0 15px 0 0;
+    color: hsla(224, 30%, 27%, 0.466);
+    margin-top: -20px;
+}
+.content > p{
+    font-weight: 800;
+}
+.spn{
+    color: var(--Dark_gray_blue) !important;
+    margin-right: 10px;
+}
+.background-red {
+    background-color: var(--Light_red);
+}
+
+.background-red  span{
+    color: hsl(0, 100%, 67%);
+}
+
+.background-yellow {
+    background-color: var(--Orangey_yellow);
+}
+.background-yellow  span{
+    color: hsl(39, 100%, 56%);
+}
+
+.background-green {
+    background-color: var(--Green_teal);
+}
+.background-green span{
+    color: hsl(166, 100%, 37%);
+}
+
+.background-violet {
+    background-color: var(--Cobalt_blue);
+}
+.background-violet span{
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    width: 85%;
+    height: 50px;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background-image: linear-gradient(var(--Light_slate_blue_background), var(--Light_royal_blue_background));
+}
+
+svg {
+    margin: 0 10px 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    main {
+        width: 740px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        box-shadow: 30px 30px 60px 0px hsla(224, 30%, 27%, 0.363);   
+    }
+    .section01 {
+        color: var(--Light_lavender);
+        border-radius: 0 0 30px 30px;
+
+    }
+    .res76 {
+        width: 150px;
+        height: 150px;
+    }
+    .content-res > h2 {
+        font-size: 1.6rem;
+    }
+
+}
